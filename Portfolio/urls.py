@@ -22,6 +22,7 @@ from django.conf import settings
 api_urlpatterns = [
     path('base/', include('apps.base.urls')),
     path('contacts/', include('apps.contacts.urls')),
+    path('secondary/', include('apps.secondary.urls')),
 ]
 
 urlpatterns = [

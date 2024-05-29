@@ -3,25 +3,21 @@ from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Contacts(models.Model):
-    fullname = models.CharField(
+    locate = models.CharField(
         max_length=255,
-        verbose_name='ФИО',
-        blank=False,
-        null=False,
+        verbose_name='Локация'
     )
-    desc = RichTextField(
-        verbose_name='Описание'
+    phone = models.CharField(
+        max_length=255,
+        verbose_name='Номер телефона'
     )
-    image = models.ImageField(
-        verbose_name='Логотип сайта',
-        upload_to='logo/',
-        blank=True,
-        null=True,
+    email = models.EmailField(
+        verbose_name='Почта',
     )
     def __str__(self):
-        return self.fullname
+        return self.locate
     
     class Meta:
-        verbose_name = 'Портфолио'
-        verbose_name_plural = 'Портфолии'
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
 

@@ -4,5 +4,5 @@ from apps.contacts import models
 
 @admin.register(models.Contacts)
 class ContactsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'fullname')
+    list_display = ('id', 'locate', 'email', 'phone')
     

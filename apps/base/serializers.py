@@ -6,3 +6,4 @@ class SettingsSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Settings
         fields = ['id','title', 'desc', 'logo', 'email', 'phone']
+

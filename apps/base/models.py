@@ -30,4 +30,3 @@ class Settings(models.Model):
     class Meta:
         verbose_name = 'Настройка сайта'
         verbose_name_plural = 'Настройки сайта'
-
